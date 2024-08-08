@@ -2,7 +2,7 @@
 :root {
   --header-color: #003366;
   --accent-color: #4caf50;
-  --text-color: #131212;
+  --text-color: #000000;
   --main-color-2: #ff9800;
   --accent-color-2: #e3f2fd;
 }
@@ -20,7 +20,6 @@ a {
 }
 body {
   font-family: abril-fatface, Montserrat;
-  background-color: #bdb8b8;
 }
 /* general styles */
 .container {
@@ -38,7 +37,7 @@ body {
   padding: 0.41rem 0.72rem;
   text-transform: uppercase;
   position: relative;
-  color: var(--header-color);
+  color: var(--text-color);
   transition: 0.3s ease-in;
 }
 .sub-heading::before {
@@ -96,23 +95,22 @@ body {
   font-family: serif;
   font-weight: 500;
   margin: 0.99rem 0;
-  color: var(--header-color);
+  color: var(--accent-color);
   transition: 0.3s ease-in;
   text-transform: capitalize;
 }
 .text {
-  font-weight: 300;
+  font-weight: 400;
   letter-spacing: 0.7px;
-  font-size: 16px;
+  font-size: 17px;
   color: var(--text-color);
-  transition: 0.3s ease-in;
 }
 header {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  gap: 10rem;
   align-items: center;
+  gap: 10rem;
   padding: 4% 6%;
   text-transform: uppercase;
   background-color: var(--text-color);
@@ -125,6 +123,13 @@ header {
   transition: 0.3s;
 }
 header a {
+  color: var(--accent-color-2);
+  transition: 0.3s;
+}
+header.scrolled a {
+  color: var(--text-color);
+}
+header.scrolled .btn {
   color: var(--accent-color-2);
 }
 
@@ -164,29 +169,27 @@ header nav {
     border-radius: 5px; */
   position: relative;
   font-weight: 500;
+  z-index: 3;
   opacity: 0.9;
   transition: 0.3s;
 }
-.nav-links:hover,
-.nav-links.active {
-  color: ;
-}
+
 .nav-links::after {
   content: "";
   position: absolute;
   width: 0;
   height: 10px;
   border-radius: 10px;
-  z-index: -1;
+  z-index: 2;
   background-color: var(--accent-color);
   bottom: 0;
-  left: -5px;
+  left: -3px;
   opacity: 0;
 }
 .nav-links:hover::after,
 .nav-links.active::after {
   width: 100%;
-  opacity: 0.2;
+  opacity: 0.5;
 }
 .menu {
   display: none;
@@ -400,10 +403,10 @@ header nav {
   padding: 2rem;
 }
 .swiper-slide {
-  padding: 2rem 1.5rem;
-  padding-bottom: 0;
+  padding: 2rem 3.5rem 0 1.5rem;
   display: flex;
   flex-direction: column;
+  width: 100%;
   gap: 1.34rem;
 }
 
@@ -416,9 +419,13 @@ header nav {
 
 .comment-body {
   position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
 }
 
 .recommendation-text {
+  flex-basis: 80%;
   color: var(--text-color);
   overflow: hidden;
   font-weight: 500;
