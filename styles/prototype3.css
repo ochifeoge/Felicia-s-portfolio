@@ -1,0 +1,139 @@
+nav.scrolled {
+  box-shadow: 0 5px 20px 0.1px rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(35px);
+  background-color: black;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  width: 100%;
+  height: 100px;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease,
+    backdrop-filter 0.3s ease;
+}
+
+nav.scrolled .nav-link,
+nav.scrolled .navbar-brand {
+  color: white;
+}
+
+.swiper-slide {
+  padding: 2rem 3.5rem 0 1.5rem;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 1.34rem;
+}
+
+.swiper-pagination-bullet {
+  background-color: #198754;
+  cursor: pointer;
+  width: 9px;
+  height: 9px;
+}
+.comment-head {
+  display: flex;
+  align-items: center;
+  gap: 1.47rem;
+}
+
+.profil-pic img {
+  width: 85px;
+  height: 85px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* .profil h3 {
+  color: var(--text-color);
+  font-weight: 600;
+  font-size: 16px;
+} */
+/* .profil h5 {
+  font-size: 16px;
+  margin: 0.33rem 0;
+}
+.profil h5 a {
+  color: var(--accent-color);
+  padding-left: 0.3rem;
+  display: inline-block;
+  opacity: 0.9;
+  letter-spacing: 0.5px;
+} */
+span i {
+  color: rgb(161, 141, 27);
+}
+
+.comment-body {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.recommendation-text {
+  flex-basis: 80%;
+  color: var(--text-color);
+  overflow: hidden;
+  font-weight: 500;
+  line-height: 25px;
+  max-height: 70px;
+  transition: max-height 0.3s ease, opacity 0.3s ease;
+}
+
+.recommendation-text.expanded {
+  overflow: visible;
+  max-height: none;
+}
+
+.toggle-button {
+  background-color: black;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+/* FOOTER SECTION */
+footer {
+  background: black;
+}
+
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  height: 20vh;
+
+  text-transform: uppercase;
+
+  width: 100%;
+}
+.footer-icon {
+  display: flex;
+  gap: 0.5rem;
+}
+.footer-icon a {
+  color: #198754;
+  font-size: 22px;
+  cursor: pointer;
+  transition: 0.3s ease-in;
+}
+.footer-icon a:hover {
+  transform: translateY(-7px);
+}
+
+@media (max-width: 500px) {
+  .comment-head {
+    flex-direction: column;
+    align-items: start;
+    gap: 1rem;
+  }
+
+  .profil-pic img {
+    width: 65px;
+    height: 65px;
+  }
+}

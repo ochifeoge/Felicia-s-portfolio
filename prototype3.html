@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Felicia Fred</title>
+
+    <!-- FONT AWESOME ICONS LIB -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer" />
+
+    <!-- BOOTSTRAP -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous" />
+
+    <!-- swiper js -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <!-- MANUAL CSS -->
+
+    <link rel="stylesheet" href="styles/prototype3.css" />
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg text-uppercase reveal-header">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"> q.h.s.e </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a href="#home" class="nav-link">Home</a>
+              </li>
+              <li class="nav-item">
+                <a href="#about" class="nav-link">about</a>
+              </li>
+              <li class="nav-item">
+                <a href="#services" class="nav-link">services</a>
+              </li>
+              <!-- <li class="nav-item"><a href="" class="nav-link">portfolio</a></li> -->
+              <li class="nav-item">
+                <a href="#testimonials" class="nav-link">Testimonials</a>
+              </li>
+            </ul>
+
+            <a href="mailto:felicityfred.ff67@gmail.com" class="btn btn-success"
+              >get in touch
+              <i
+                class="fa-solid fa-arrow-up-right-from-square reveal-header-btn"></i
+            ></a>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section id="home">
+        <div class="container">
+          <div class="row justify-content-center align-items-center">
+            <div class="col-md-6 col-lg-7 mb-2 reveal-hero-text">
+              <h3>
+                Achieve Goal <span class="h2">Zero</span> with Expert HSE
+                Leadership
+              </h3>
+              <p class="lead">
+                Partner with me to reach Goal Zero—zero incidents and zero harm.
+                With my HSE expertise, I’ll help you implement top-notch safety
+                practices and ensure full regulatory compliance. Together, we’ll
+                create a safe and efficient work environment.
+              </p>
+              <button type="button" class="btn btn-success">CONTACT ME</button>
+              <button type="button" class="btn btn-outline-secondary">
+                DOWNLOAD CV
+              </button>
+            </div>
+            <div class="col-md-5 col-lg-4 reveal-hero-img">
+              <img
+                src="assets/ms fred.jpg"
+                alt="felicia fred"
+                class="img-fluid" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="my-5">
+        <div class="container">
+          <h3 class="text-center">ABOUT ME</h3>
+          <div class="row">
+            <div class="col-md-6">
+              <h4 class="fw-light">
+                Passionate HSE Specialist Committed to Ensuring Safe and
+                Sustainable Work Environments
+              </h4>
+              <p>
+                I am <strong>FELICIA OLASUMBO FRED</strong>, a dedicated Health,
+                Safety, and Environment (HSE) professional with 5 years of
+                experience in fostering safe and compliant work environments
+                across diverse industries. My expertise lies in developing and
+                implementing robust safety programs, conducting thorough risk
+                assessments, and ensuring strict adherence to regulatory
+                standards. Throughout my career, I have successfully managed
+                complex safety projects, led compliance audits, and provided
+                comprehensive training to teams at all levels. My proactive
+                approach and strong problem-solving skills have consistently
+                resulted in significant reductions in workplace incidents and
+                enhancements in overall safety performance.
+              </p>
+              <ul class="nav nav-tabs" id="myTab" role="tablist">
+                <li class="nav-item" role="presentation">
+                  <button
+                    class="nav-link active"
+                    id="home-tab"
+                    data-bs-toggle="tab"
+                    data-bs-target="#home-tab-pane"
+                    type="button"
+                    role="tab"
+                    aria-controls="home-tab-pane"
+                    aria-selected="true">
+                    Education
+                  </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button
+                    class="nav-link"
+                    id="profile-tab"
+                    data-bs-toggle="tab"
+                    data-bs-target="#profile-tab-pane"
+                    type="button"
+                    role="tab"
+                    aria-controls="profile-tab-pane"
+                    aria-selected="false">
+                    Experience
+                  </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button
+                    class="nav-link"
+                    id="contact-tab"
+                    data-bs-toggle="tab"
+                    data-bs-target="#contact-tab-pane"
+                    type="button"
+                    role="tab"
+                    aria-controls="contact-tab-pane"
+                    aria-selected="false">
+                    Skills
+                  </button>
+                </li>
+              </ul>
+              <div class="tab-content" id="myTabContent">
+                <div
+                  class="tab-pane fade show active"
+                  id="home-tab-pane"
+                  role="tabpanel"
+                  aria-labelledby="home-tab"
+                  tabindex="0">
+                  <ul id="education" class="tab-content active">
+                    <li>
+                      <span>2019 - 2021</span>
+                      <p>
+                        Petroleum Training Institute Higher National Diploma,
+                        Environmental Engineering
+                      </p>
+                    </li>
+                    <li>
+                      <span> 2015 -2018 </span>
+                      <p>
+                        Petroleum Training Institute National Diploma,
+                        Industrial Safety and Environmental Technology
+                      </p>
+                    </li>
+                  </ul>
+                </div>
+                <div
+                  class="tab-pane fade"
+                  id="profile-tab-pane"
+                  role="tabpanel"
+                  aria-labelledby="profile-tab"
+                  tabindex="0">
+                  <ul id="experience" class="tab-content">
+                    <li>
+                      <span>Sep 2023 - Present </span>
+                      <p>
+                        Upstream HSE SupervisorUpstream HSE Supervisor at Matrix
+                        Energy · Full-time
+                      </p>
+                    </li>
+                    <li>
+                      <span> Jul 2023 - Sep 2023 </span>
+                      <p>
+                        Safety ManagerSafety Manager at SAEHAN Engineering Co.,
+                        Ltd. · Contract
+                      </p>
+                    </li>
+                    <li>
+                      <span> Mar 2023 - Jun 2023 </span>
+                      <p>
+                        Safety ManagerSafety Manager Soosan Industries Co. Ltd ·
+                        Contract
+                      </p>
+                    </li>
+                    <li>
+                      <span> Feb 2022 - Feb 2023 </span>
+                      <p>
+                        Personal Assistant to Managing Director at M&H Global
+                        Services Nigeria Limited
+                      </p>
+                    </li>
+                    <li>
+                      <span> Jun 2020 - Jul 2021 </span>
+                      <p>
+                        Health Safety Environment Officer at Habour Technologies
+                        Limited
+                      </p>
+                    </li>
+                    <li>
+                      <span> Mar 2019 - Jan 2020 </span>
+                      <p>
+                        Health, Safety & Environment(HSE) Intern at Matrix
+                        Energy
+                      </p>
+                    </li>
+                    <li>
+                      <span> Dec 2018 - Mar 2019 </span>
+                      <p>
+                        Human Resource Assistant at NNPC Limited · Internship
+                      </p>
+                    </li>
+                  </ul>
+                </div>
+                <div
+                  class="tab-pane fade"
+                  id="contact-tab-pane"
+                  role="tabpanel"
+                  aria-labelledby="contact-tab"
+                  tabindex="0">
+                  <ul id="skills" class="tab-content">
+                    <li>
+                      <span>Operations Management</span>
+                      <p>Upstream HSE Supervisor at Matrix Energy</p>
+                      <p>Safety Manager at SAEHAN Engineering Co., Ltd.</p>
+                    </li>
+                    <li>
+                      <span> Interpersonal Skills </span>
+                      <p>Safety Manager at SAEHAN Engineering Co., Ltd.</p>
+                      <p>Safety Manager at Soosan Industries Co. Ltd</p>
+                      <p>
+                        Personal Assistant to Managing Director at M&H Global
+                        Services Nigeria Limited
+                      </p>
+                      <p>
+                        Health Safety Environment Officer at Habour Technologies
+                        Limited
+                      </p>
+                      <p>
+                        Health, Safety & Environment(HSE) Intern at Matrix
+                        Energy
+                      </p>
+                    </li>
+                    <li>
+                      <span> Quality Management </span>
+                      <p>Upstream HSE Supervisor at Matrix Energy</p>
+                      <p>Safety Manager at SAEHAN Engineering Co., Ltd.</p>
+                    </li>
+                    <li>
+                      <span> First Aid </span>
+                      <p>
+                        Personal Assistant to Managing Director at M&H Global
+                        Services Nigeria Limited
+                      </p>
+                      <p>
+                        Health, Safety & Environment(HSE) Intern at Matrix
+                        Energy
+                      </p>
+                    </li>
+                    <li>
+                      <span> Traning and Development (HR) </span>
+                      <p>Human Resource Assistant at NNPC Limited</p>
+                      <p>
+                        Personal Assistant to Managing Director at M&H Global
+                        Services Nigeria Limited
+                      </p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6"></div>
+          </div>
+        </div>
+      </section>
+
+      <section id="services" class="my-5 bg-light">
+        <div class="container">
+          <h3>SERVICES</h3>
+          <div class="row justify-content-center align-items-center">
+            <div class="col-md-6 col-lg-4">
+              <div class="card">
+                <img
+                  src="assets/pexels-kateryna-babaieva-1423213-2760241.jpg"
+                  class="card-img-top"
+                  alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">Safety Audit</h5>
+                  <p class="card-text">
+                    Conduct comprehensive safety audits to identify compliance
+                    gaps and recommend improvements.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="card">
+                <img
+                  src="assets/pexels-solace-nike-277771892-13057408.jpg"
+                  class="card-img-top"
+                  alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">Risk Management Solution</h5>
+                  <p class="card-text">
+                    Develop customized risk management plans to address specific
+                    workplace hazards and ensure safety.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="card">
+                <img src="assets/CAT.jpeg" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">Incident Investigation Services</h5>
+                  <p class="card-text">
+                    Perform detailed investigations of workplace incidents and
+                    prepare reports with actionable recommendations for
+                    improvement.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <h4>Core Competencies</h4>
+          <div class="row">
+            <div class="accordion" id="accordionExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseOne"
+                    aria-expanded="true"
+                    aria-controls="collapseOne">
+                    Risk Assessment
+                  </button>
+                </h2>
+                <div
+                  id="collapseOne"
+                  class="accordion-collapse collapse show"
+                  data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    Expert in identifying <strong>potential</strong> hazards and
+                    evaluating risks within various work environments. Skilled
+                    at performing thorough risk assessments to anticipate safety
+                    issues and implement effective risk mitigation strategies.
+                    Capable of using various tools and methodologies to quantify
+                    risks, prioritize them, and develop comprehensive action
+                    plans to address them.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseTwo"
+                    aria-expanded="false"
+                    aria-controls="collapseTwo">
+                    Safety Management
+                  </button>
+                </h2>
+                <div
+                  id="collapseTwo"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    Proven ability to design, implement, and manage safety
+                    management systems
+                    <strong>tailored to specific industry needs.</strong>
+                    Experienced in developing safety policies and procedures,
+                    conducting safety inspections, and ensuring that safety
+                    protocols are adhered to. Adept at creating and maintaining
+                    a culture of safety through regular evaluations and updates
+                    to safety practices.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseThree"
+                    aria-expanded="false"
+                    aria-controls="collapseThree">
+                    Regulatory Compliance
+                  </button>
+                </h2>
+                <div
+                  id="collapseThree"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    In-depth knowledge of <strong>OSHA, EPA</strong> , and other
+                    relevant regulatory requirements to ensure organizational
+                    compliance. Experienced in interpreting complex regulations,
+                    developing compliance programs, and conducting audits to
+                    verify adherence. Skilled at preparing for and managing
+                    regulatory inspections and addressing any issues or findings
+                    promptly.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="testimonials" class="my-5">
+        <div class="container">
+          <h3>
+            Appraisals from Colleagues and Supervisors
+            <span>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </span>
+          </h3>
+          <div class="swiper shadow-sm p-3 mb-5 bg-body-tertiary rounded">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide">
+                <div class="comment-head">
+                  <div class="profil-pic">
+                    <img src="./assets/aminu.jpeg" alt="" />
+                  </div>
+                  <div class="profil">
+                    <p class="lead fw-bold m-0">
+                      <a
+                        target="_blank"
+                        class="link-offset-2 link-underline link-underline-opacity-0"
+                        href="https://www.linkedin.com/in/aminu-ibrahim-garkida-43246a111?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BdCqCMNW9TGiGnYcVnfqAXQ%3D%3D"
+                        >Aminu Ibrahim Garkida</a
+                      >
+                    </p>
+                    <small>Well Engineer at Matrix Energy Group</small>
+                  </div>
+                </div>
+                <div class="comment-body fst-italic">
+                  <p class="recommendation-text" class="text-content">
+                    April 8, 2024, Aminu worked with Felicia on the same team It
+                    is my distinct pleasure to wholeheartedly recommend Felicia
+                    for her exemplary contributions as a Health, Safety, and
+                    Environment (HSE) professional. I had the privilege of
+                    collaborating closely with Felicia both in the Apani and
+                    Atamba field locations, and throughout our time together,
+                    she consistently showcased an unwavering commitment to
+                    excellence. Felicia's dedication to her role is truly
+                    commendable. With meticulous attention to detail and a
+                    proactive mindset, she ensures that safety protocols are not
+                    only met but exceeded in every aspect of our operations. Her
+                    astute ability to identify and mitigate potential hazards
+                    has been instrumental in fostering a culture of safety and
+                    well-being within our team, whether amidst the challenges of
+                    Apani or Atamba. What sets Felicia apart is her relentless
+                    pursuit of excellence. She sets ambitious goals for herself
+                    and her team, pushing the boundaries to achieve and surpass
+                    safety benchmarks. Her efforts have been pivotal in our
+                    organization's journey towards zero Lost Time Incidents
+                    (LTI), a testament to her effectiveness in upholding the
+                    highest standards of safety performance. Moreover, Felicia
+                    possesses exceptional communication skills, which she
+                    adeptly utilizes to convey complex safety information with
+                    clarity and precision. Her ability to engage and educate our
+                    workforce has significantly contributed to heightened safety
+                    awareness and compliance across all levels of the
+                    organization. In conclusion, Felicia's diligence,
+                    intelligence, and eloquence make her an invaluable asset to
+                    any HSE-related endeavor. It has been both a privilege and a
+                    pleasure to work alongside her in the challenging
+                    environments of Apani and Atamba. I am confident that
+                    Felicia will continue to excel in her future endeavors,
+                    leaving an indelible mark wherever her career may take her.
+                  </p>
+                  <button class="toggle-button">Read More</button>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="comment-head">
+                  <div class="profil-pic">
+                    <img src="./assets/ubong.jpeg" alt="" />
+                  </div>
+                  <div class="profil">
+                    <p class="lead fw-bold m-0">
+                      <a
+                        target="_blank"
+                        class="link-offset-2 link-underline link-underline-opacity-0"
+                        href="https://www.linkedin.com/in/ubong-udofia-beng-stanford-certified-project-manager-4399532b?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3Bzik3%2F0VzS92QUzYs4zig5Q%3D%3D"
+                        >Ubong Udofia</a
+                      >
+                    </p>
+                    <small
+                      >Stanford Certified Project Manager and Well Engineering
+                      Lead</small
+                    >
+                  </div>
+                </div>
+                <div class="comment-body fst-italic">
+                  <p class="recommendation-text" class="text-content">
+                    It's my pleasure to recommend Ms. Felicia Fred based on our
+                    interactions and project work. Throughout our collaboration,
+                    Ms. Felicia Fred has consistently demonstrated a keen
+                    intellect, strong work ethic, excellent communication skills
+                    , and has consistently demonstrated exemplary dedication to
+                    maintaining high standards of health, safety, and
+                    environmental practices in the workplace as befitting of a
+                    HSE professional. As an HSE Supervisor, Ms. Felicia Fred
+                    exhibited a profound commitment to ensuring the well-being
+                    of our team members and the preservation of our environment.
+                    Her attention to detail and thorough understanding of safety
+                    protocols have significantly contributed to the creation of
+                    a secure and compliant work environment. Ms. Felicia Fred
+                    possesses excellent leadership qualities, effectively
+                    guiding our team members in adhering to safety procedures
+                    and promoting a culture of safety consciousness. Her
+                    proactive approach to identifying and mitigating potential
+                    hazards has been instrumental in preventing accidents and
+                    promoting a positive safety culture throughout the
+                    organization. Moreover, Ms Felicia Fred has demonstrated
+                    strong communication skills, effectively disseminating
+                    safety-related information and fostering open dialogue
+                    regarding safety concerns among team members. Her ability to
+                    communicate complex safety procedures in a clear and concise
+                    manner has been invaluable in ensuring that all employees
+                    understand and adhere to safety protocols. In summary, Ms.
+                    Felicia Fred has proven herself to be a dedicated and highly
+                    competent HSE Supervisor. Her unwavering commitment to
+                    promoting health, safety, and environmental stewardship
+                    makes her a valuable asset to any organization. I
+                    wholeheartedly recommend Ms. Felicia Fred for any role where
+                    excellence in HSE management is required.
+                  </p>
+                  <button class="toggle-button">Read More</button>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="comment-head">
+                  <div class="profil-pic">
+                    <img src="./assets/ekemena.jpeg" alt="" />
+                  </div>
+                  <div class="profil">
+                    <p class="lead fw-bold m-0">
+                      <a
+                        target="_blank"
+                        class="link-offset-2 link-underline link-underline-opacity-0"
+                        href="https://www.linkedin.com/in/omoghagha-ekemena-850b0187?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BevDFghBpT%2ByarNV59zwpFg%3D%3D"
+                        >Omoghagha Ekemena</a
+                      >
+                    </p>
+                    <small
+                      >Lead Auditor| ISO 45001 MASSP| NEBOSH IGC| ISO
+                      14001;...</small
+                    >
+                  </div>
+                </div>
+                <div class="comment-body fst-italic">
+                  <p class="recommendation-text" class="text-content">
+                    I had the pleasure of working closely with Felicia Fred on
+                    various complex projects such are Overhauling of 220MW steam
+                    turbine and retubing of an entire Unit steam boiler and I'm
+                    thrilled to endorse her for her exceptional dedication and
+                    expertise in the field. Felicia Fred played a crucial role
+                    in the success of our OHS initiatives and projects set
+                    targets. Her meticulous planning, organization, and
+                    attention to detail were evident in every project she
+                    undertook with me. I particularly admire her talent for
+                    assessing complex OHS issues, developing practical
+                    solutions, and ensuring their smooth implementation. Part of
+                    what speaks volume for her in the course of these projects
+                    was her demonstrated outstanding interpersonal skills,
+                    Dedication, collaborating effectively with cross-functional
+                    teams and stakeholders, her ability to communicate OHS
+                    strategies and priorities ensuring that everyone was aligned
+                    and committed to the safety goals. I can confidently say
+                    that Felicia Fred is an asset to any organization looking to
+                    strengthen its OHS efforts as her passion for creating safer
+                    workplaces, combined with her project management expertise,
+                    makes her an ideal choice for any OHS project. I
+                    wholeheartedly recommend Felicia Fred and look forward to
+                    witnessing her continued contributions to the field.
+                  </p>
+                  <button class="toggle-button">Read More</button>
+                </div>
+              </div>
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="mt-5 reveal-footer">
+      <div class="container-fluid">
+        <div class="footer text-light">
+          <h3>felicia .o. fred</h3>
+          <p>©Copyright 2024. All rights reserved</p>
+          <div class="footer-icon">
+            <a
+              href="https://www.linkedin.com/in/felicityfred?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BErPqmKCkTPKq%2BSmsLN1EHQ%3D%3D"
+              target="_blank"
+              ><i class="fa-brands fa-linkedin"></i
+            ></a>
+            <a href="https://x.com/liciafred67?s=21" target="_blank"
+              ><i class="fa-brands fa-x-twitter"></i
+            ></a>
+            <a href="https://www.instagram.com/fhelycity" target="_blank"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+            <a href="https://www.facebook.com/felicityiwajomo" target="_blank"
+              ><i class="fa-brands fa-facebook"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="scripts/prototype3.js"></script>
+  </body>
+</html>
