@@ -1,11 +1,3 @@
-ScrollReveal().reveal(".reveal-header", {
-  origin: "top",
-  distance: "50px",
-  duration: 1000,
-  easing: "ease-in-out",
-  opacity: 0,
-  delay: 200,
-});
 ScrollReveal().reveal(".reveal-hero-text", {
   origin: "left",
   distance: "50px",
@@ -71,12 +63,12 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 // SCROLL ANIMATIONS
-
+/* 
 const nav = document.querySelector("nav");
 window.addEventListener("scroll", () => {
   scrollAnimation();
-});
+}); */
 
-function scrollAnimation() {
-  nav.classList.toggle("scrolled", window.scrollY > 95);
-}
+/* function scrollAnimation() {
+  nav.classList.toggle("scrolled", window.scrollY > 80);
+} */
