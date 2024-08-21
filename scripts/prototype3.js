@@ -1,3 +1,5 @@
+import { apprasials } from "./comments.js";
+
 ScrollReveal().reveal(".reveal-hero-text", {
   origin: "left",
   distance: "50px",
@@ -72,3 +74,35 @@ window.addEventListener("scroll", () => {
 /* function scrollAnimation() {
   nav.classList.toggle("scrolled", window.scrollY > 80);
 } */
+
+let html = "";
+apprasials.forEach((apprasial) => {
+  html += `
+      <div class="swiper-slide">
+         <div class="comment-head">
+                  <div class="profil-pic">
+                    <img src="./assets/${apprasial.img}" alt="" />
+                  </div>
+                  <div class="profil">
+                    <p class="lead fw-bold m-0">
+                      <a
+                        target="_blank"
+                        class="link-offset-2 link-underline link-underline-opacity-0"
+                        href="${apprasial.link}"
+                        >${apprasial.name}</a
+                      >
+                    </p>
+                    <small>${apprasial.title}</small>
+                  </div>
+                </div>
+                <div class="comment-body fst-italic">
+                  <p class="recommendation-text" class="text-content">
+                  ${apprasial.comment}
+                  </p>
+                  <button class="toggle-button">Read More</button>
+                </div>
+              </div>
+      `;
+});
+
+document.querySelector(".js-comment-slide").innerHTML = html;
