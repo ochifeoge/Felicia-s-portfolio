@@ -1,5 +1,71 @@
 import { apprasials } from "./comments.js";
 
+document.addEventListener("DOMContentLoaded", function () {
+  // Select all buttons and text elements
+  const buttons = document.querySelectorAll(".toggle-button");
+  const texts = document.querySelectorAll(".recommendation-text");
+
+  // Attach event listeners to each button
+  buttons.forEach((button, index) => {
+    button.addEventListener("click", function () {
+      const textContent = texts[index]; // Get the corresponding text element
+
+      if (textContent.classList.contains("expanded")) {
+        textContent.classList.remove("expanded");
+        button.textContent = "Read More";
+      } else {
+        textContent.classList.add("expanded");
+        button.textContent = "Read Less";
+      }
+    });
+  });
+});
+
+// SCROLL ANIMATIONS
+
+window.addEventListener("scroll", () => {
+  if (!play) {
+    increamentAnimation();
+  }
+});
+
+// responsible for updating the count from 0 t0 targer number
+function updateCount(startNum, targetNum) {
+  let currentNum = +startNum.innerText;
+  if (currentNum < targetNum) {
+    startNum.innerText = currentNum + 1;
+    setTimeout(() => {
+      updateCount(startNum, targetNum);
+    }, 12);
+  }
+}
+
+const menteeNum = document.querySelectorAll(".number-count");
+const menteeTrigger = document.querySelector(".mentee-trigger");
+
+let play = false;
+function increamentAnimation() {
+  if (!hasReached()) {
+    return;
+  }
+  play = true;
+  menteeNum.forEach((mentee) => {
+    const target = +mentee.dataset.targetNumber;
+
+    setTimeout(() => {
+      updateCount(mentee, target);
+    }, 1000);
+  });
+}
+
+// checking if the element has reached the viewport and is visible
+function hasReached() {
+  let topPosition = menteeTrigger.getBoundingClientRect().top;
+  if (window.innerHeight >= topPosition) {
+    return true;
+  } else return false;
+}
+
 ScrollReveal().reveal(".reveal-hero-text", {
   origin: "left",
   distance: "50px",
@@ -43,38 +109,7 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-document.addEventListener("DOMContentLoaded", function () {
-  // Select all buttons and text elements
-  const buttons = document.querySelectorAll(".toggle-button");
-  const texts = document.querySelectorAll(".recommendation-text");
-
-  // Attach event listeners to each button
-  buttons.forEach((button, index) => {
-    button.addEventListener("click", function () {
-      const textContent = texts[index]; // Get the corresponding text element
-
-      if (textContent.classList.contains("expanded")) {
-        textContent.classList.remove("expanded");
-        button.textContent = "Read More";
-      } else {
-        textContent.classList.add("expanded");
-        button.textContent = "Read Less";
-      }
-    });
-  });
-});
-
-// SCROLL ANIMATIONS
-/* 
-const nav = document.querySelector("nav");
-window.addEventListener("scroll", () => {
-  scrollAnimation();
-}); */
-
-/* function scrollAnimation() {
-  nav.classList.toggle("scrolled", window.scrollY > 80);
-} */
-
+// for generating the apprasial
 let html = "";
 apprasials.forEach((apprasial) => {
   html += `

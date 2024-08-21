@@ -4,8 +4,7 @@ export const apprasials = [
     link: "https://www.linkedin.com/in/aminu-ibrahim-garkida-43246a111?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BdCqCMNW9TGiGnYcVnfqAXQ%3D%3D",
     name: "Aminu Ibrahim Garkida",
     title: "Well Engineer at Matrix Energy Group",
-    comment: `April 8, 2024, Aminu worked with Felicia on the same team It
-                    is my distinct pleasure to wholeheartedly recommend Felicia
+    comment: `It is my distinct pleasure to wholeheartedly recommend Felicia
                     for her exemplary contributions as a Health, Safety, and
                     Environment (HSE) professional. I had the privilege of
                     collaborating closely with Felicia both in the Apani and
