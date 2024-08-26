@@ -28,51 +28,13 @@
     <!-- MANUAL CSS -->
 
     <link rel="stylesheet" href="styles/prototype3.css" />
-
+    
+     <!-- SCROLL-REVEAL -->
     <script src="https://unpkg.com/scrollreveal"></script>
   </head>
   <body>
     <!-- HEADER -->
     <header>
-      <!--  <nav class="navbar navbar-expand-lg text-uppercase reveal-header">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#"> q.h.s.e </a>
-          <button
-            class="navbar-toggler js-menu"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a href="#home" class="nav-link">Home</a>
-              </li>
-              <li class="nav-item">
-                <a href="#about" class="nav-link">about</a>
-              </li>
-              <li class="nav-item">
-                <a href="#services" class="nav-link">services</a>
-              </li>
-             
-              <li class="nav-item">
-                <a href="#testimonials" class="nav-link">Testimonials</a>
-              </li>
-            </ul>
-
-            <a href="mailto:felicityfred.ff67@gmail.com" class="btn btn-success"
-              >get in touch
-              <i
-                class="fa-solid fa-arrow-up-right-from-square reveal-header-btn"></i
-            ></a>
-          </div>
-        </div>
-      </nav> -->
-
       <nav
         class="navbar navbar-dark navbar-expand-lg bg-dark fixed-top text-uppercase">
         <div class="container-fluid">
@@ -157,7 +119,7 @@
             <div class="col-md-5 col-lg-4 reveal-hero-img">
               <img
                 src="assets/felicia main hero.jpg"
-                alt="felicia fred"
+                alt="An image of felicia fred"
                 class="img-fluid rounded" />
             </div>
           </div>
@@ -191,6 +153,8 @@
                 resulted in significant reductions in workplace incidents and
                 enhancements in overall safety performance.
               </p>
+
+                <!-- Education, Experience AND skills NAV -->
              
               <ul class="nav nav-tabs" id="myTab" role="tablist">
                 <li class="nav-item" role="presentation">
@@ -269,41 +233,55 @@
                   tabindex="0">
                   <ul id="experience" class="tab-content">
                     <li>
+                      <p class="mb-1">
+                        HSE Supervisor  
+                      </p>
                       <p>
-                        Upstream HSE Supervisor at Matrix Energy
+                        Matrix Energy Group
                       </p>
                     </li>
                     <li>
+                      <p class="mb-1">
+                        Safety Manager
+                      </p>
                       <p>
-                        Safety Manager at SAEHAN Engineering Co., Ltd.
+                        SAEHAN Engineering Co. Ltd.
                       </p>
                     </li>
                     <li>
+                      <p class="mb-1">
+                        Safety Manager 
+                      </p>
                       <p>
-                        Safety Manager Soosan Industries Co. Ltd ·
+                        Soosan Industries Co. Ltd ·
                       </p>
                     </li>
                     <li>
+                      <p class="mb-1">
+                        Personal Assistant to Managing Director 
+                      </p>
+                      <p> M&H Global Services Nigeria Limited</p>
+                    </li>
+                    <li>
+                      <p class="mb-1">
+                        Health Safety & Environment Officer
+                      </p>
+                      <p>Habour Technologies Limited</p>
+                    </li>
+                    <li>
+                      <p class="mb-1">
+                        Health, Safety & Environment Intern 
+                      </p>
                       <p>
-                        Personal Assistant to Managing Director at M&H Global
-                        Services Nigeria Limited
+                        Matrix Energy Group
                       </p>
                     </li>
                     <li>
-                      <p>
-                        Health Safety & Environment Officer at Habour Technologies
-                        Limited
+                      <p class="mb-1">
+                        Human Resource Assistant 
                       </p>
-                    </li>
-                    <li>
                       <p>
-                        Health, Safety & Environment(HSE) Intern at Matrix
-                        Energy
-                      </p>
-                    </li>
-                    <li>
-                      <p>
-                        Human Resource Assistant at NNPC Limited · Internship
+                        NNPC Limited · Internship
                       </p>
                     </li>
                   </ul>
@@ -611,7 +589,7 @@
                 career, or looking to advance your career, our experienced mentors are here
                 to provide the guidance you need.
               </p>
-              <p class="lead">As someone who is passionate about mentorships and knowledge sharing, I have helped several youths find their footing in the HSE field, career-related choices, transitions as well as solve complex decision making challenges.
+              <p class="">As someone who is passionate about mentorships and knowledge sharing, I have helped several youths find their footing in the HSE field, career-related choices, transitions as well as solve complex decision making challenges.
                 
                 </p>
 
@@ -645,7 +623,7 @@
 <!-- Modal -->
 <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
   <div class="modal-dialog">
-    <div class="modal-content">
+    <div class="modal-content glass">
       <div class="modal-header">
         <h1 class="modal-title fs-5" id="staticBackdropLabel">Start a Mentorship Journey with Me</h1>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -718,14 +696,14 @@
             <div class="col-lg-6 shadow-lg p-3 mb-5 bg-body-tertiary rounded d-lg-none">
               <h5 class="mb-4 fw-light">Start a Mentorship Journey with Me</h5>
               <form
-                action="https://formspree.io/f/xanwbprz"
-                method="POST"
+              action="https://formspree.io/f/xanwbprz"
+              method="POST"
                 class="p-3">
                 <div class="mb-3">
                   <label for="name" class="form-label">Your Name</label>
                   <input
                     type="text"
-                    class="form-control"
+                    class="form-control js-form-message"
                     name="name"
                     id="name"
                     aria-describedby="name" />
@@ -736,17 +714,17 @@
                     required
                     type="email"
                     name="email"
-                    class="form-control"
+                    class="form-control js-form-message"
                     id="InputEmail1"
                     aria-describedby="emailHelp" />
                 </div>
                 <div class="mb-3">
                   <label>Experience:</label>
                   <select name="experience" required class="form-select">
-                    <option value="1">0 - 2 Years</option>
-                    <option value="2">2 - 5 Years</option>
-                    <option value="2">6 - 10 Years</option>
-                    <option value="2">10+ Years</option>
+                    <option value="0 - 2">0 - 2 Years</option>
+                    <option value="3 - 5">3 - 5 Years</option>
+                    <option value="6 - 9">6 - 9 Years</option>
+                    <option value="10+">10+ Years</option>
                   </select>
                 </div>
                 <div class="mb-3">
@@ -756,20 +734,20 @@
                   <input
                     type="text"
                     name="study"
-                    class="form-control"
+                    class="form-control js-form-message"
                     id="study" />
                 </div>
                 <div class="mb-3">
                   <label for="message" class="form-label">Your Message</label>
                   <textarea
                     placeholder="why do you want to get access to my mentorship program?"
-                    class="form-control"
+                    class="form-control js-form-message"
                     id="message"
                     name="message"
                     rows="4"></textarea>
                 </div>
 
-                <button type="submit" class="btn btn-primary">Submit</button>
+                <button type="submit" class="btn btn-primary" onclick="resetInputValue()">Submit</button>
               </form>
             </div>
           </div>
@@ -778,14 +756,16 @@
 
       <section id="testimonials" class="my-5">
         <div class="container">
-          <h3>
+          <h3 class="text-center text-uppercase py-3">
             Appraisals from Colleagues and Supervisors
             <span>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
+              <div class="text-center">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
             </span>
           </h3>
           <div class="swiper shadow-sm p-3 mb-5 bg-body-tertiary rounded">

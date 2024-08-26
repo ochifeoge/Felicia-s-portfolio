@@ -100,6 +100,14 @@ section {
   border-radius: 50%;
   object-fit: cover;
 }
+.glass {
+  background: rgba(255, 255, 255, 0.2); /* Semi-transparent background */
+  border-radius: 15px; /* Rounded corners */
+  backdrop-filter: blur(10px); /* Blur effect for the glassmorphism look */
+  padding: 20px; /* Add some padding */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Subtle shadow for depth */
+  color: white; /* Text color to ensure readability */
+}
 
 /* .profil h3 {
   color: var(--text-color);
@@ -144,12 +152,11 @@ span i {
 }
 
 .toggle-button {
-  background-color: black;
-  color: #fff;
+  color: #000;
   border: none;
-  padding: 10px;
-  cursor: pointer;
-  margin-top: 10px;
+  padding: 10px 0;
+  font-style: italic;
+  cursor: pointer !important;
 }
 
 /* FOOTER SECTION */

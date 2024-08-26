@@ -97,7 +97,7 @@ document.addEventListener("DOMContentLoaded", function () {
     loop: true,
     speed: 500,
     autoplay: {
-      delay: 5000,
+      delay: 10000,
       disableOnInteraction: true,
     },
 
@@ -109,7 +109,15 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-// for generating the apprasial
+// CODE FOR CLEARING THE FORM AFTER SUBMISSION
+
+function resetInputValue() {
+  document.querySelectorAll(".js-form-message").forEach((inputSection) => {
+    inputSection.value = "";
+  });
+}
+
+// CODE for generating the apprasial
 let html = "";
 apprasials.forEach((apprasial) => {
   html += `
@@ -134,7 +142,7 @@ apprasials.forEach((apprasial) => {
                   <p class="recommendation-text" class="text-content">
                   ${apprasial.comment}
                   </p>
-                  <button class="toggle-button">Read More</button>
+                  <button class="toggle-button">Read More...</button>
                 </div>
               </div>
       `;

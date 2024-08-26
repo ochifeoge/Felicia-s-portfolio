@@ -3,7 +3,8 @@ export const apprasials = [
     img: "aminu.jpeg",
     link: "https://www.linkedin.com/in/aminu-ibrahim-garkida-43246a111?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BdCqCMNW9TGiGnYcVnfqAXQ%3D%3D",
     name: "Aminu Ibrahim Garkida",
-    title: "Well Engineer at Matrix Energy Group",
+    title:
+      "Well Engineer | Project Engineer | Financial Analysis | Assets Management",
     comment: `It is my distinct pleasure to wholeheartedly recommend Felicia
                     for her exemplary contributions as a Health, Safety, and
                     Environment (HSE) professional. I had the privilege of
@@ -79,7 +80,8 @@ export const apprasials = [
     img: "ekemena.jpeg",
     link: "https://www.linkedin.com/in/omoghagha-ekemena-850b0187?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BevDFghBpT%2ByarNV59zwpFg%3D%3D",
     name: "Omoghagha Ekemena",
-    title: "Lead Auditor| ISO 45001 MASSP| NEBOSH IGC| ISO     14001;...",
+    title:
+      "MASSP| NEBOSH IGC| ISO 14001;Lead Auditor| ISO 45001; OHS Lead Auditor| IOSH Managing Safely|",
     comment: `I had the pleasure of working closely with Felicia Fred on
                     various complex projects such are Overhauling of 220MW steam
                     turbine and retubing of an entire Unit steam boiler and I'm
@@ -128,7 +130,7 @@ I enthusiastically recommend Felicia to anyone seeking a dedicated and knowledge
   {
     img: "jubril.jpg",
     link: "https://www.linkedin.com/in/adewale-jubril-1b7776269?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BH63eBeg4T%2Fendp8XsLsa8w%3D%3D",
-    name: "Adewale (ADEBOWALE) jubril",
+    name: "Adewale (ADEBOWALE) Jubril",
     title:
       "Aspiring Instrumentation and Control Engineer// Student Senate// public speaker",
     comment: `I am pleased to recommend Felicia for her outstanding contributions as my senior colleague at M&H Global Services. Throughout our time working together, Felicia has consistently demonstrated exemplary professionalism, leadership, and expertise in her role.In addition to her technical proficiency, Felicia also excels in interpersonal communication. She is approachable, empathetic, and always willing to lend a helping hand to her colleagues. Her positive attitude and strong interpersonal skills make her a pleasure to work with and a respected member of our team.`,
