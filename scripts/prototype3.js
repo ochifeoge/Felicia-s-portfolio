@@ -1,3 +1,4 @@
+import { description } from "./about.js";
 import { apprasials } from "./comments.js";
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -116,6 +117,31 @@ function resetInputValue() {
     inputSection.value = "";
   });
 }
+
+// ABOUT US TEXT
+
+let aboutMe = document.querySelector(".js-about");
+const toggleAbt = document.querySelector(".toggle-abt");
+
+const aboutMeShort = description.substring(0, 520) + "...";
+
+aboutMe.innerText = aboutMeShort;
+
+toggleAbt.addEventListener("click", () => {
+  if (toggleAbt.innerText === "Less") {
+    aboutMe.innerText = aboutMeShort;
+    toggleAbt.innerText = "More";
+  } else {
+    aboutMe.innerText = description;
+    toggleAbt.innerText = "Less";
+  }
+});
+
+// COPY RIGHT DATE
+const date = new Date();
+date.getFullYear() !== 2024
+  ? (document.getElementById("js-date").innerText = "-" + date.getFullYear())
+  : "";
 
 // CODE for generating the apprasial
 let html = "";
